@@ -1,0 +1,26 @@
+{
+    "name": "presprog/contao-password-suggestion",
+    "description": "Adds an one click password generator to the backend user management of Contao Open Source CMS to simplify adding new back end users.",
+    "keywords": ["contao", "user", "password"],
+    "type": "contao-module",
+    "license": "LGPL3.0+",
+    "authors": [
+        {
+            "name": "benedict zinke . present progressive",
+            "email": "bz@presentprogressive.de",
+            "homepage": "http://www.presentprogressive.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "contao/core": "~3.5"
+    },
+    "extra":{
+        "contao": {
+            "sources":{
+                "src": "system/modules/password-suggestion"
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+
+.pws-wrapper { position: relative; }
+
+.pws-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 80px;
+    height: 20px;
+    margin-top: 1px;
+
+    background-color: #CCC;
+    color: black;
+
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    border-top: 1px solid #AAA;
+    border-right: 1px solid #AAA;
+    border-bottom: 1px solid #AAA;
+    border-left: none;
+
+    cursor: pointer;
+
+    font-family: "Trebuchet MS",Verdana,sans-serif;
+    font-size: 11px;
+}
+
+.pws-toggle:hover {
+    background-color: #DDD;
+}
+
+@media screen and (min-width: 767px) {
+    .pws-toggle { right: 8.7%; }
+}
+
+@media screen and (min-width: 1200px) {
+    .pws-toggle { right: 6.5%; }
+}
