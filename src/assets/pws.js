@@ -25,6 +25,11 @@ var PwSuggestion = (function() {
             that.passwordField.setAttribute('value', suggestion);
             that.confirmField.setAttribute('value', suggestion);
 
+            try {
+                that.passwordField.select();
+                document.execCommand('copy')
+            } catch(e) {}
+
         });
 
     };
