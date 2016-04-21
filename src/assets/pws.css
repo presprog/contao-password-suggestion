@@ -11,6 +11,7 @@
     border-style: solid;
     border-color: #AAA;
     color: black;
+    cursor: pointer;
     font-family: "Trebuchet MS",Verdana,sans-serif;
     font-size: 12px;
 }
@@ -22,7 +23,6 @@
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
     border-width: 1px 1px 1px 0;
-    cursor: pointer;
     z-index: 11;
 }
 
