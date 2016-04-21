@@ -1,40 +1,74 @@
 
 .pws-wrapper { position: relative; }
 
-.pws-toggle {
+.pws-btn {
+    box-sizing: border-box;
+    height: 20px;
+    margin-top: 1px;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 30px;
 
+    border-style: solid;
+    border-color: #AAA;
+    color: black;
+    font-family: "Trebuchet MS",Verdana,sans-serif;
+    font-size: 12px;
+}
+
+.pws-btn--generate {
     width: 80px;
+    right: 0;
+    background-color: #DEDEDE;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-width: 1px 1px 1px 0;
+    cursor: pointer;
+    z-index: 11;
+}
+
+.pws-btn--generate:hover {
+    background-color: #EEE;
+}
+
+.pws-btn--copy {
+    right: 80px;
+
+    box-sizing: border-box;
+    width: 20px;
     height: 20px;
     margin-top: 1px;
 
-    background-color: #CCC;
-    color: black;
+    background: #CCC url("icon_copy.png") no-repeat center center;
+    background-size: 12px;
 
-    border-top-right-radius: 3px;
+    border-width: 1px 0;
+    border-top-left-radius: 3px;
     border-bottom-right-radius: 3px;
 
-    border-top: 1px solid #AAA;
-    border-right: 1px solid #AAA;
-    border-bottom: 1px solid #AAA;
-    border-left: none;
-
-    cursor: pointer;
-
-    font-family: "Trebuchet MS",Verdana,sans-serif;
-    font-size: 11px;
+    opacity: 1;
+    transition: opacity .3s ease, right .3s ease, visibility .3s ease;
+    visibility: visible;
+    z-index: 10;
 }
 
-.pws-toggle:hover {
+.pws-btn--copy:hover {
     background-color: #DDD;
 }
 
+.pws-btn--copy.is-hidden {
+    right: 60px;
+    opacity: 0;
+    visibility: hidden;
+}
+
 @media screen and (min-width: 767px) {
-    .pws-toggle { right: 8.7%; }
+    .pws-btn--generate       { right: 8.7%; }
+    .pws-btn--copy           { right: calc(80px + 8.7%); }
+    .pws-btn--copy.is-hidden { right: calc(60px + 8.7%); }
 }
 
 @media screen and (min-width: 1200px) {
-    .pws-toggle { right: 6.5%; }
+    .pws-btn--generate       { right: 6.4%; }
+    .pws-btn--copy           { right: calc(80px + 6.4%); }
+    .pws-btn--copy.is-hidden { right: calc(60px + 6.4%); }
 }

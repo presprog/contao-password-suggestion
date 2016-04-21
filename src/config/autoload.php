@@ -1,5 +1,5 @@
 <?php
 
-TemplateLoader::addFiles([
-    'be_widget_pw' => 'system/modules/password-suggestion/templates'
+ClassLoader::addClasses([
+    'PwSuggestion' => 'system/modules/password-suggestion/classes/PwSuggestion.php'
 ]);
