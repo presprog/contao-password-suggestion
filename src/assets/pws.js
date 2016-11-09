@@ -4,7 +4,7 @@ var PwSuggestion = (function () {
     function PwSuggestion(options) {
         // default options
         this.options = {
-            charCount: 16,
+            charCount: 8,
             chars: 'abcdefghijklmnopqrstuvwxyz' +
                 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
                 '0123456789' +
