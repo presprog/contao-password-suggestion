@@ -5,7 +5,7 @@ class PwSuggestion
 
     public function enhancePasswordWidget($buffer, Widget $widget)
     {
-        if ($widget->type !== 'password') {
+        if (TL_MODE != 'BE' || $widget->type !== 'password') {
             return $buffer;
         }
 
