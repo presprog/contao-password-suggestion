@@ -1,12 +1,12 @@
 <?php
 
 $GLOBALS['TL_HOOKS']['parseWidget'][] = [
-    'PwSuggestion', 'enhancePasswordWidget'
+    'PresProg\PwSuggestion\PwSuggestion', 'enhancePasswordWidget'
 ];
 
 // add assets
 if (TL_MODE == 'BE') {
-    if (Config::get('debugMode')) {
+    if (\Config::get('debugMode')) {
         $GLOBALS['TL_JAVASCRIPT'][] = 'system/modules/password-suggestion/assets/pws.js';
         $GLOBALS['TL_CSS'][] = 'system/modules/password-suggestion/assets/pws.css';
     } else {
