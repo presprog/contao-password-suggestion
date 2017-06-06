@@ -1,9 +1,11 @@
 <?php
 
+namespace PresProg\PwSuggestion;
+
 class PwSuggestion
 {
 
-    public function enhancePasswordWidget($buffer, Widget $widget)
+    public function enhancePasswordWidget($buffer, \Widget $widget)
     {
         if (TL_MODE != 'BE' || $widget->type !== 'password') {
             return $buffer;
