@@ -12,7 +12,11 @@ class PwSuggestion
         }
 
         // add wrapper class to first password field
-        $buffer = preg_replace('/w50/', 'w50 pws-wrapper', $buffer, 1);
+        // add class for Contao 4
+        $isC4 = ( ( (int) substr(VERSION, 0, 1) ) >= 4) ? true : false;
+        $class = 'w50 pws-wrapper';
+        $class .= ($isC4) ? ' c4' : ' c3';
+        $buffer = preg_replace('/w50/', $class, $buffer, 1);
 
         // initialize PwSuggestion
         $buffer .= "
