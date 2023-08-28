@@ -1,0 +1,36 @@
+.pws-button {
+    box-sizing: border-box;
+    width: 80px;
+    height: 30px;
+    padding: 0 .75rem;
+    position: absolute;
+    top: 32px;
+    right: 24px;
+    z-index: 11;
+    border-width: 1px 1px 1px 0;
+    border-color: #AAA;
+    border-style: solid;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    color: black;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    font-size: 0.75rem;
+    background-color: #DEDEDE;
+}
+
+.pws-button:hover {
+    background-color: #EEE;
+}
+
+#ctrl_password:focus + .pws-button {
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+@media screen and (min-width: 767px) {
+    .pws-button {
+        right: 24px;
+    }
+}

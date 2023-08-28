@@ -1,0 +1,9 @@
+services:
+  PresProg\PasswordSuggestion\PasswordSuggestion:
+    public: true
+    arguments:
+      - '@request_stack'
+      - '@contao.routing.scope_matcher'
+      - '@translator'
+      - '%pws.characters%'
+      - '%pws.password_length%'
