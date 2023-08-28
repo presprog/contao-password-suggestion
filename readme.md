@@ -4,8 +4,7 @@ This extension adds a one-click password generator to the Contao Open Source CMS
 
 ![Short demo of Contao Password Suggestion](demo.gif)
 
-```
-## Install ##
+## Installation
 Just install the extension with Composer or with the help of the Contao Manager.
 
 ```bash
@@ -14,7 +13,7 @@ composer require presprog/contao-password-suggestion
 
 ```
 
-## Config ##
+## Configuration
 You may configure the character set from which the password will be generated as well as its length.
 
 ```yml
