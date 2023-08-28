@@ -49,6 +49,7 @@ class PasswordSuggestion
 
     /**
      * @Callback(table="tl_user", target="config.onload")
+     * @Callback(table="tl_member", target="config.onload")
      */
     public function addAssets(): void
     {
