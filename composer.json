@@ -6,10 +6,9 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Benedict Massolle",
-            "email": "bm@presentprogressive.de",
+            "name": "Present Progressive",
+            "email": "hello@presentprogressive.de",
             "homepage": "http://www.presentprogressive.de",
-            "role": "Developer"
         }
     ],
     "require": {
@@ -28,5 +27,8 @@
     },
     "extra": {
         "contao-manager-plugin": "PresProg\\PasswordSuggestion\\ContaoManager\\Plugin"
+    },
+    "support": {
+        "issues": "https://github.com/presprog/contao-password-suggestion/issues"
     }
 }
